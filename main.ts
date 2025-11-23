@@ -14,6 +14,8 @@ bluetooth.onUartDataReceived(serial.delimiters(Delimiters.NewLine), function () 
         basic.showArrow(ArrowNames.West)
     } else if (data == "r") {
         basic.showArrow(ArrowNames.East)
+    } else if (data == "s") {
+        basic.showIcon(IconNames.Diamond)
     } else {
         basic.showString(data)
     }
